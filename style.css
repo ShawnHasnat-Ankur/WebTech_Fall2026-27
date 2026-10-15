@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #0b1120;
+    color: white;
+    line-height: 1.7;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color:#111a2e ;
+    padding: 18px 8%;
+    display: flex;
+    z-index: 100;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo span,
+section h2 span{
+    color: #00d4ff;
+}
+
+.navbar .menu{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover{
+    color: #00d4ff;
+}
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 8%;
+    min-height: 90vh;
+    gap: 40px;
+}
+
+.home-content {
+    max-width: 650px;
+   
+}
+
+.intro {
+    color: #00d4ff;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+
+.home h3{
+    color: #00d4ff;
+    margin-bottom: 15px;
+}
+
+
+.home-content p{
+    color: #c4ccda;
+    margin-bottom: 25px;
+}
+
+
+.home-image img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid #00d4ff;
+    border-radius: 20px;
+}
+
+
+.btn{
+    display: inline-block;
+    background-color: #00d4ff;
+    color:#0b1120 ;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+     border: 3px solid #00d4ff;
+     margin:5px;
+}
+
+
+.btn:hover{
+    background-color: transparent;
+    color: #00d4ff;
+}
+
+
+.btn.outline{
+    background: transparent;
+    color: #00d4ff;
+    
+}
+
+
+.section{
+    padding: 75px 8%;
+    text-align: center;
+}
+
+
+.section h2{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+
+.about-text{
+    max-width: 800px;
+    margin: auto;
+    color: #c4ccda;
+   
+}
+
+
+.skills{
+    background: #111a2e;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    
+}
+
+.card{
+    background:  #17233a;
+    padding: 25px;
+    border-radius: 12px;
+    width: 230px;
+    transition: 0.3s;
+    border: 1px solid #293b56;
+}
+
+
+.card:hover{
+    transform: translateY(-8px);
+    border-color:  #00d4ff;
+}
+
+
+.card h3{
+    color: #00d4ff;
+    margin-bottom: 12px;
+}
+
+
+.card p{
+    color: #c4ccda;
+    
+}
+
+
+.projects{
+   width: 280px;
+}
+
+
+.contact p{
+    color: #c4ccda;
+    margin-bottom: 12px;
+}
+
+
+footer{
+    background: #111a2e;
+    padding: 20px ;
+    text-align: center;
+    color: #c4ccda;
+}
+
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        gap:15px;
+    }
+    .navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home h1{
+        font-size: 32px;
+    }
+
+    .home-image img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 3px solid #00d4ff;
+    border-radius: 20px;
+    display: block;
+}
+
+    .section{
+        padding: 55px 6%;
+    }
+
+
+
+}
